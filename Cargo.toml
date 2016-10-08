@@ -1,0 +1,14 @@
+[package]
+name = "triangle"
+version = "0.0.1"
+
+[dependencies]
+glium = "0.15.0"
+cgmath = "0.7"
+genmesh = "0.4"
+obj = { version = "0.5", features = ["usegenmesh"] }
+rand = "0.3"
+
+[replace]
+"backtrace:0.2.3" = { git = "https://github.com/badboy/backtrace-rs", branch = "emscripten-fix" }
+"glutin:0.6.1" = { git = "https://github.com/badboy/glutin", branch = "emscripten-fix" }
